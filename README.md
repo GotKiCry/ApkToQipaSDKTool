@@ -5,7 +5,7 @@
 1.请注意APK中生成的Dex文件数量是否为5，超过5个请自己分析文件构成
 2.指定APK位置
 ### jars2Smali
-1.请指定d8位置，一般在大于31的sdk文件内
+1.请指定d8位置，一般在大于28的sdk文件内(JDK大于8后，修改d8.bat 脚本内-Djava.ext.dirs为--class-path)
 2.会自动删除com\qipa\目录
 ### clean_dirs_file
 默认清理app-debug out work_dex work_jar文件夹 新建out work_dex work_jar文件夹
