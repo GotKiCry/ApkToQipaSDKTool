@@ -41,8 +41,8 @@ echo assets
 @REM mkdir .\out\assets\
 xcopy /H /F /S /Y .\app-debug\assets\ .\out\assets\
 echo lib...
-@REM mkdir .\out\lib\
-xcopy /H /F /S /Y .\app-debug\lib\ .\out\lib\
+@REM mkdir .\out\libs\
+xcopy /H /F /S /Y .\app-debug\lib\ .\out\libs\
 echo res...
 @REM mkdir .\out\res\
 xcopy /H /F /S /Y .\app-debug\res\ .\out\res\
