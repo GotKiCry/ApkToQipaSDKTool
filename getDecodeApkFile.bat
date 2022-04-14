@@ -33,7 +33,7 @@ echo    提取apk文件
 echo -----------------------------------------------------
 
 
-java -jar .\tool_jar\apktool.jar d %SUPER_SDK%\app\build\outputs\apk\debug\app-debug.apk --only-main-classes
+java -jar .\tool_jar\apktool.jar d %SUPER_SDK%\app\build\intermediates\apk\debug\app-debug.apk --only-main-classes
 
 echo 整合文件...
 
@@ -49,12 +49,12 @@ xcopy /H /F /S /Y .\app-debug\res\ .\out\res\
 
 echo smali...
 @REM mkdir .\out\smali\com\supersdk\
-xcopy /H /F /S /Y .\app-debug\smali\ .\out\smali\
+@REM xcopy /H /F /S /Y .\app-debug\smali\ .\out\smali\
 
-rd /q /s .\out\smali\com\supersdk\
-rd /q /s .\out\smali\com\qipa\
+@REM rd /q /s .\out\smali\com\supersdk\
+@REM rd /q /s .\out\smali\com\qipa\
 
-xcopy /H /F /S /Y .\app-debug\smali_classes3\com\supersdk\ .\out\smali\com\supersdk\
+@REM xcopy /H /F /S /Y .\app-debug\smali_classes3\com\supersdk\ .\out\smali\com\supersdk\
 @REM xcopy /H /F /S /Y .\app-debug\smali_classes2\ .\out\smali\
 
 
